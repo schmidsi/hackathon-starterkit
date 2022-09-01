@@ -1,0 +1,5 @@
+type Withdrawal @entity {
+  id: ID!
+  amount: BigInt! # uint256
+  when: BigInt! # uint256
+}
