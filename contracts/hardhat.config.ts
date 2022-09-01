@@ -1,8 +1,15 @@
-import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "@graphprotocol/hardhat-graph";
 
-const config: HardhatUserConfig = {
+const config = {
   solidity: "0.8.9",
+  subgraph: {
+    name: "lock",
+    indexEvents: true
+  },
+  paths: {
+    subgraph: "../subgraph",
+  },
 };
 
 export default config;

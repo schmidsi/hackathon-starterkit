@@ -1,4 +1,4 @@
-import { ethers } from "hardhat";
+import hre, { ethers } from "hardhat";
 
 async function main() {
   const currentTimestampInSeconds = Math.round(Date.now() / 1000);
@@ -13,6 +13,8 @@ async function main() {
   await lock.deployed();
 
   console.log(`Lock with 1 ETH and unlock timestamp ${unlockTime} deployed to ${lock.address}`);
+
+  await hre.run("graph", { contractName: "Lock", address: lock.address });
 }
 
 // We recommend this pattern to be able to use async/await everywhere

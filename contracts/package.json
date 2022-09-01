@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hardhat test",
+    "graph-test": "graph test",
+    "graph-build": "cd ../subgraph && graph codegen",
+    "graph-codegen": "cd ../subgraph && graph build",
+    "graph-local": "docker-compose up",
+    "graph-local-clean": "docker-compose down -v && docker-compose rm -v && rm -rf data/ipfs data/postgres",
+    "create-local": "graph create --node http://127.0.0.1:8020 lock",
+    "deploy-local": "cd ../subgraph && graph deploy --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020 lock",
+    "hardhat-local": "hardhat node --hostname 0.0.0.0"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +20,7 @@
   "dependencies": {
     "@ethersproject/abi": "^5.4.7",
     "@ethersproject/providers": "^5.4.7",
+    "@graphprotocol/hardhat-graph": "0.1.0-alpha.0",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.3",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.4",
     "@types/chai": "^4.2.0",
