@@ -1,6 +1,6 @@
 # Fullstack Hackathon Starter Kit
 
-This starter kit aims to be a very minimalistic boilerplate to quickly get started with fullstack dapp development.
+This starter kit aims to be a very minimalistic boilerplate to quickly get started with fullstack dapp development with Hardhat and The Graph.
 
 ## Features
 
