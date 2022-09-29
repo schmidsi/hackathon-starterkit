@@ -6,7 +6,7 @@
   "scripts": {
     "test": "hardhat test",
     "localnode": "hardhat node --hostname 0.0.0.0",
-    "deploy:localhost": "pnpm hardhat run scripts/deploy.ts --network localhost"
+    "deploy:localhost": "pnpm hardhat deploy --network localhost"
   },
   "keywords": [],
   "author": "",
