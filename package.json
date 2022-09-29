@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "graph-node": "docker compose up",
+    "graph-node:clean": "docker-compose down -v && docker-compose rm -v && rm -rf data/ipfs data/postgres"
+  }
+}

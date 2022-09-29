@@ -15,7 +15,7 @@ This starter kit aims to be a very minimalistic boilerplate to quickly get start
 - Clone the repo
 - Install dependencies: `pnpm install`
 - Terminal 1: Run a hardhat node: `cd contracts && pnpm localnode`
-- Terminal 2: Run the graph node: `cd subgraph && pnpm graph-node`
+- Terminal 2: Run the graph node: `cd .. && pnpm graph-node`
 - Terminal 3:
   - Deploy the contracts: `cd contracts && pnpm hardhat run scripts/deploy.ts --network localhost`
   - Generate subgraph helper code: `cd ../subgraph && pnpm graph codegen --network localhost`
