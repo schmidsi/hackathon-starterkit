@@ -3,6 +3,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
+    "codegen:local": "graph codegen --network localhost",
     "build": "graph build",
     "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ lock",
     "create:local": "graph create --node http://localhost:8020/ lock",
