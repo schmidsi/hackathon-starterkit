@@ -8,12 +8,12 @@ task("mint", "Deploys the passed contract")
 
     const mintTo = to || (await hre.ethers.getSigners())[0].address;
 
-    const myNFT = MyNFT.attach(networks[hre.network.name].MyNFT.address);
+    const myNFT = MyNFT.attach(
+      (networks as any)[hre.network.name].MyNFT.address
+    );
 
     const tx = await myNFT.mint(mintTo);
     const receipt = await tx.wait();
-
-    // console.log({ tx, receipt });
 
     console.log(`Minted 1 NFT to ${mintTo}`);
   });

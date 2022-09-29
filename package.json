@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "docker compose up",
+    "dev": "docker compose up --renew-anon-volumes",
+    "clean": "docker compose down --volumes",
     "quickstart": "pnpm contracts:deploy && pnpm subgraph:create && pnpm subgraph:deploy",
     "contracts:deploy": "cd contracts && pnpm deploy:localhost",
     "subgraph:create": "cd subgraph && pnpm create:local",

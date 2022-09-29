@@ -5,10 +5,10 @@
     "codegen": "graph codegen",
     "codegen:local": "graph codegen --network localhost",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ lock",
-    "create:local": "graph create --node http://localhost:8020/ lock",
-    "remove:local": "graph remove --node http://localhost:8020/ lock",
-    "deploy:local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 lock --version-label $(git rev-parse HEAD)",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ mynft",
+    "create:local": "graph create --node http://localhost:8020/ mynft",
+    "remove:local": "graph remove --node http://localhost:8020/ mynft",
+    "deploy:local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 mynft --version-label $(git rev-parse HEAD)",
     "test": "graph test"
   },
   "dependencies": {
