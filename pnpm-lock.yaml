@@ -10,6 +10,7 @@ importers:
       '@nomicfoundation/hardhat-chai-matchers': ^1.0.3
       '@nomicfoundation/hardhat-network-helpers': ^1.0.4
       '@nomicfoundation/hardhat-toolbox': ^1.0.2
+      '@openzeppelin/contracts': ^4.7.3
       '@types/chai': ^4.2.0
       chai: ^4.3.6
       ethers: ^5.7.1
@@ -22,6 +23,7 @@ importers:
       '@graphprotocol/hardhat-graph': 0.1.0-alpha.0_a7aj55bai3exvmog3vvwxchora
       '@nomicfoundation/hardhat-chai-matchers': 1.0.3_kfqbramma5oiiyu35fzylk5lwu
       '@nomicfoundation/hardhat-network-helpers': 1.0.4_hardhat@2.10.2
+      '@openzeppelin/contracts': 4.7.3
       '@types/chai': 4.3.3
       chai: 4.3.6
       ethers: 5.7.1
@@ -653,6 +655,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@openzeppelin/contracts/4.7.3:
+    resolution: {integrity: sha512-dGRS0agJzu8ybo44pCIf3xBaPQN/65AIXNgK8+4gzKd5kbvlqyxryUYVLJv7fK98Seyd2hDZzVEHSWAh0Bt1Yw==}
+    dev: false
 
   /@scure/base/1.1.1:
     resolution: {integrity: sha512-ZxOhsSyxYwLJj3pLZCefNitxsj093tb2vq90mp2txoYeBqbcjDjqFhyM8eUjq/uFm6zJ+mUuqxlS2FkuSY1MTA==}

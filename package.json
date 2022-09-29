@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "docker compose up",
     "quickstart": "pnpm contracts:deploy && pnpm subgraph:create && pnpm subgraph:deploy",
-    "contracts:deploy": "cd contracts && pnpm hardhat run scripts/deploy.ts --network localhost",
+    "contracts:deploy": "cd contracts && pnpm deploy:localhost",
     "subgraph:create": "cd subgraph && pnpm create:local",
     "subgraph:deploy": "cd subgraph && pnpm codegen:local && pnpm deploy:local"
   }
