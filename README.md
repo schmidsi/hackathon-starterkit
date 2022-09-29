@@ -18,5 +18,6 @@ This starter kit aims to be a very minimalistic boilerplate to quickly get start
 - Terminal 2: Run the graph node: `cd subgraph && pnpm graph-node`
 - Terminal 3:
   - Deploy the contracts: `cd contracts && pnpm hardhat run scripts/deploy.ts --network localhost`
-  - Create the subgraph: `cd ../subgraph && pnpm create:local`
+  - Generate subgraph helper code: `cd ../subgraph && pnpm graph codegen --network localhost`
+  - Create the subgraph: `pnpm create:local`
   - Deploy the subgraph: `pnpm deploy:local`
