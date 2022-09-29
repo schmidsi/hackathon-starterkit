@@ -11,11 +11,13 @@ importers:
       '@nomicfoundation/hardhat-toolbox': ^2.0.0
       '@openzeppelin/contracts': ^4.7.3
       hardhat: ^2.11.2
+      subgraph: workspace:*
     dependencies:
       '@graphprotocol/hardhat-graph': 0.1.0-alpha.0_anxsstnrv66azrpxvaxbogjwdq
       '@nomicfoundation/hardhat-toolbox': 2.0.0_ehkkqfb5v7bvruxrqdyqbyfsze
       '@openzeppelin/contracts': 4.7.3
       hardhat: 2.11.2_s5ojjbx2isjkawqptqpitvy25q
+      subgraph: link:../subgraph
 
   subgraph:
     specifiers:
