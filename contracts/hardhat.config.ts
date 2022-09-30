@@ -1,17 +1,17 @@
-import "@nomicfoundation/hardhat-toolbox";
-import "@graphprotocol/hardhat-graph";
+import '@nomicfoundation/hardhat-toolbox';
+import '@graphprotocol/hardhat-graph';
 
-import "./tasks/deploy";
-import "./tasks/mint";
+import './tasks/deploy';
+import './tasks/mint';
 
 const config = {
-  solidity: "0.8.9",
+  solidity: '0.8.9',
   subgraph: {
-    name: "lock",
+    name: 'mynft',
     indexEvents: true,
   },
   paths: {
-    subgraph: "../subgraph",
+    subgraph: '../subgraph',
   },
 };
 
