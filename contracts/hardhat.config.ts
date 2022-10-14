@@ -3,6 +3,7 @@ import '@graphprotocol/hardhat-graph';
 
 import './tasks/deploy';
 import './tasks/mint';
+import './tasks/balanceOf';
 
 const config = {
   solidity: '0.8.9',
