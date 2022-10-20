@@ -3,8 +3,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
-    "codegen:local": "graph codegen --network localhost",
-    "build": "graph build",
+    "build": "graph build --network localhost",
     "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ mynft",
     "create:local": "graph create --node http://localhost:8020/ mynft",
     "remove:local": "graph remove --node http://localhost:8020/ mynft",
