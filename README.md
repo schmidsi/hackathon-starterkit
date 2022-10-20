@@ -21,10 +21,16 @@ started with fullstack dapp development with Hardhat and The Graph.
 - Clone the repo
 - Install dependencies: `pnpm install`
 - Terminal 1: Run local dev environment: `pnpm dev`
-- Terminal 2:
-  - Deploy the contracts: `pnpm contracts:deploy`
-  - Create the subgraph: `pnpm subgraph:create`
-  - Deploy the subgraph: `pnpm subgraph:deploy`
+- Terminal 2: Deploy contract & subgraph: `pnpm quickstart`
+- Navigate to
+  [http://localhost:8000/subgraphs/name/mynft/graphql](http://localhost:8000/subgraphs/name/mynft/graphql)
+  to explore the newly deployed subgraph
+
+### Other commands
+
+- Deploy the contracts: `pnpm contracts:deploy`
+- Deploy the subgraph: `pnpm subgraph:deploy`
+- Cleanup database: `pnpm clean`
 
 ## Troubleshooting
 

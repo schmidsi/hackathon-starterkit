@@ -60,19 +60,6 @@
       {
         "indexed": true,
         "internalType": "address",
-        "name": "to",
-        "type": "address"
-      }
-    ],
-    "name": "Mint",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "internalType": "address",
         "name": "from",
         "type": "address"
       },
