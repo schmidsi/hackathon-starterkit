@@ -1,0 +1,5 @@
+sources:
+  - name: mysubgraph
+    handler:
+      graphql:
+        endpoint: http://localhost:8000/subgraphs/name/mynft

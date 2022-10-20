@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "graphclient build && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "graphclient build"
   },
   "dependencies": {
     "@nextui-org/react": "1.0.0-beta.10",
@@ -15,6 +16,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@graphprotocol/client-cli": "^2.2.13",
     "@types/node": "18.11.2",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
