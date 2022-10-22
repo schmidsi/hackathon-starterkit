@@ -11,15 +11,15 @@
     "graphclient:serve": "graphclient serve-dev"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.0",
-    "@graphprotocol/client-apollo": "^1.0.12",
+    "@graphprotocol/client-urql": "^1.0.12",
     "@nextui-org/react": "1.0.0-beta.10",
     "deepmerge": "^4.2.2",
     "graphql": "^16.6.0",
     "lodash": "4.17.21",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "urql": "^3.0.3"
   },
   "devDependencies": {
     "@graphprotocol/client-cli": "^2.2.14",
