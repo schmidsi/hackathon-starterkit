@@ -1,16 +1,13 @@
 import { ethers } from 'ethers';
 import { Resolvers } from '../.graphclient';
 
-console.log('loading resolverfs');
-
 let provider: ethers.providers.Web3Provider;
 let signer: ethers.providers.JsonRpcSigner;
 
 export const resolvers: Resolvers = {
   Ethereum: {
+    // TODO: Why is accunt typing incorrect?
     account: async () => {
-      console.log('calling account');
-
       if (signer) {
         return signer.getAddress();
       } else if ((window as any).ethereum) {
@@ -25,17 +22,12 @@ export const resolvers: Resolvers = {
   },
   Query: {
     _ethereum: () => {
-      console.log('calling etherum');
-
+      // Returning and empty object triggers the Ethereum.account resolver above
       return {};
-      // return null;
-      // return resolvers.Ethereum;
     },
   },
   Mutation: {
     connect: async () => {
-      console.log('trigger connect');
-
       provider = new ethers.providers.Web3Provider((window as any).ethereum);
 
       console.log(provider);

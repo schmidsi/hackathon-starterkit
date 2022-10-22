@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Button, Col, Container, Row } from '@nextui-org/react';
+import { Badge, Button, Col, Container, Row } from '@nextui-org/react';
 import { gql, useMutation, useQuery } from 'urql';
 
 import {
@@ -15,9 +15,8 @@ const Home: NextPage = () => {
 
   const [connectResult, connect] = useMutation(ConnectDocument);
 
-  const account = useQuery({ query: AccountDocument });
-
-  console.log(account[0]?.data?._ethereum?.account, { connectResult });
+  const result = useQuery({ query: AccountDocument });
+  const account = result[0]?.data?._ethereum?.account;
 
   const doConnect = async () => {
     console.log('doConnect');
@@ -27,7 +26,11 @@ const Home: NextPage = () => {
   return (
     <Container fluid>
       <Row justify="center" align="center">
-        <Button onPress={doConnect}>Connect</Button>
+        {account ? (
+          <Badge>{account}</Badge>
+        ) : (
+          <Button onPress={doConnect}>Connect</Button>
+        )}
       </Row>
       {data?.transfers.map((transfer) => (
         <Row key={transfer.id}>
