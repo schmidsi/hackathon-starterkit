@@ -87,4 +87,6 @@ Graph Node is not starting.
 
 - ~Does not seem to work~ Works now after restart Next server
 - Can we have a trigger to refresh? Usually it is watching in the front-end for
-  an event
+  an event or when accounts change.
+- Query result from URQL is not typed :(
+- Resolver type errors
