@@ -1,0 +1,5 @@
+query Account @live {
+  _ethereum {
+    account
+  }
+}

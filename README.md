@@ -10,11 +10,11 @@ started with fullstack dapp development with Hardhat and The Graph.
 
 ## Features
 
-- [x] Using PNPM workspaces
-- [x] Hardhat Typescript project
-- [x] Subgraph generation with [@graphprotocol/hardhat-graph]
-- [x] Local development with local hardhat node and a graph-node connected to it
-- [ ] Frontend
+- ✅ Using PNPM workspaces
+- ✅ Hardhat Typescript project
+- ✅ Subgraph generation with [@graphprotocol/hardhat-graph]
+- ✅ Local development with local hardhat node and a graph-node connected to it
+- 🛠 Frontend
 
 ## Quick Start
 
@@ -80,3 +80,11 @@ Graph Node is not starting.
 - Run `pnpm clean`
 - Restart local dev environment: `pnpm dev`
 - Redeploy everything: `pnpm quickstart`
+
+# Notes
+
+## Live queries:
+
+- ~Does not seem to work~ Works now after restart Next server
+- Can we have a trigger to refresh? Usually it is watching in the front-end for
+  an event

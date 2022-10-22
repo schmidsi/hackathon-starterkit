@@ -3,3 +3,30 @@ sources:
     handler:
       graphql:
         endpoint: http://localhost:8000/subgraphs/name/mynft
+
+plugins:
+  - pollingLive:
+      defaultInterval: 1000
+
+documents:
+  - './queries/**/*.graphql'
+
+additionalTypeDefs: |
+  extend schema {
+    mutation: Mutation
+  }
+
+  type Mutation {
+    connect: Boolean!
+  }
+
+  extend type Query {
+    _ethereum: Ethereum
+  }
+
+  type Ethereum {
+    account: String
+  }
+
+additionalResolvers:
+  - './resolvers/index.ts'

@@ -2,6 +2,8 @@ import type { NextPage } from 'next';
 import { Button, Col, Container, Row } from '@nextui-org/react';
 import { gql, useQuery } from 'urql';
 
+import { AccountDocument, TransfersDocument } from '../.graphclient';
+
 const Home: NextPage = () => {
   // const { loading, error, data } = useQuery(
   //
@@ -9,27 +11,13 @@ const Home: NextPage = () => {
 
   // console.log(loading, error, data);
 
-  const [result, reexecuteQuery] = useQuery({
-    query: gql`
-      query MyQuery {
-        transfers {
-          id
-          from
-          to
-          tokenId
-        }
-        _meta {
-          block {
-            number
-          }
-        }
-      }
-    `,
+  const [{ data, fetching, error }] = useQuery({
+    query: TransfersDocument,
   });
 
-  const { data, fetching, error } = result;
+  const account = useQuery({ query: AccountDocument });
 
-  console.log({ data, fetching, error });
+  console.log(account[0]?.data?._ethereum?.account);
 
   return (
     <Container fluid>

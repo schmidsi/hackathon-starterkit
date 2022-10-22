@@ -1,0 +1,12 @@
+query Transfers @live {
+  transfers {
+    id
+    from
+    to
+  }
+  _meta {
+    block {
+      number
+    }
+  }
+}
