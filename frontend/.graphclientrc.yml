@@ -2,4 +2,4 @@ sources:
   - name: mysubgraph
     handler:
       graphql:
-        endpoint: https://api.studio.thegraph.com/query/32339/proof-of-groove/1
+        endpoint: http://localhost:8000/subgraphs/name/mynft

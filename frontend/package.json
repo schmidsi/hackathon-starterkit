@@ -6,22 +6,24 @@
     "dev": "next dev",
     "build": "graphclient build && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "graphclient:build": "graphclient build",
+    "graphclient:serve": "graphclient serve-dev"
   },
   "dependencies": {
-    "@apollo/client": "3.1.1",
+    "@apollo/client": "3.7.0",
     "@graphprotocol/client-apollo": "^1.0.12",
     "@nextui-org/react": "1.0.0-beta.10",
     "deepmerge": "^4.2.2",
-    "graphql": "^15.3.0",
-    "lodash": "4.17.20",
+    "graphql": "^16.6.0",
+    "lodash": "4.17.21",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@graphprotocol/client-cli": "^2.2.14",
-    "@types/node": "18.11.2",
+    "@types/node": "18.11.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "eslint": "8.25.0",
