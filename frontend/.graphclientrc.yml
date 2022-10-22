@@ -10,6 +10,7 @@ plugins:
 
 documents:
   - './queries/**/*.graphql'
+  - './mutations/**/*.graphql'
 
 additionalTypeDefs: |
   extend schema {
