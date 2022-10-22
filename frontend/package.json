@@ -11,7 +11,7 @@
     "graphclient:serve": "graphclient serve-dev"
   },
   "dependencies": {
-    "@apollo/client": "3.7.0",
+    "@apollo/client": "^3.7.0",
     "@graphprotocol/client-apollo": "^1.0.12",
     "@nextui-org/react": "1.0.0-beta.10",
     "deepmerge": "^4.2.2",
