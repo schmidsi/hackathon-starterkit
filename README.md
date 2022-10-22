@@ -92,3 +92,4 @@ Graph Node is not starting.
 - Resolver type errors
 - Move common additional resolvers like \_ethereum, connect, etc to external
   repo/plugin
+- Urlq vs Apollo vs React Query?
