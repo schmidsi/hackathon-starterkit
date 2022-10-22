@@ -90,3 +90,5 @@ Graph Node is not starting.
   an event or when accounts change.
 - Query result from URQL is not typed :(
 - Resolver type errors
+- Move common additional resolvers like \_ethereum, connect, etc to external
+  repo/plugin

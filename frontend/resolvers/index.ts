@@ -6,7 +6,7 @@ let signer: ethers.providers.JsonRpcSigner;
 
 export const resolvers: Resolvers = {
   Ethereum: {
-    // TODO: Why is accunt typing incorrect?
+    // TODO: Why is account typing incorrect?
     account: async () => {
       if (signer) {
         return signer.getAddress();
