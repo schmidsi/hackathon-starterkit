@@ -36,6 +36,11 @@ const Home: NextPage = () => {
       <Row justify="center" align="center">
         <Button>Click me</Button>
       </Row>
+      {data?.transfers.map((transfer) => (
+        <Row key={transfer.id}>
+          {transfer.from} {transfer.to}
+        </Row>
+      ))}
     </Container>
   );
 };
