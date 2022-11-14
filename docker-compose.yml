@@ -1,7 +1,7 @@
 version: '3'
 services:
   hardhat:
-    build: ./contracts
+    build: ./contracts/docker
     ports:
       - "8545:8545"
   graph-node:
