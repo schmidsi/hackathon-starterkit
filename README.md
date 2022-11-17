@@ -100,6 +100,12 @@ Rebuild the Graph Client
 cd frontend && pnpm graphclient:build
 ```
 
+### Account in MetaMask does not have ETH
+
+```bash
+pnpm hardhat fund 0xa85D5BEe27EC7f436A06634Fe6D2A8c3477Eb6C5 --network localhost
+```
+
 # Notes
 
 - Live queries: ~Does not seem to work~ Works now after restart Next server
