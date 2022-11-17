@@ -81,11 +81,30 @@ Graph Node is not starting.
 - Restart local dev environment: `pnpm dev`
 - Redeploy everything: `pnpm quickstart`
 
+### Graph Client is built for server
+
+#### Symptom
+
+After running `pnpm dev` in [/frontend](./frontend/) the following error
+appears:
+
+```
+Module not found: Can't resolve 'fs'
+```
+
+#### Solution
+
+Rebuild the Graph Client
+
+```bash
+cd frontend && pnpm graphclient:build
+```
+
 # Notes
 
 - Live queries: ~Does not seem to work~ Works now after restart Next server
-  - Can we have a trigger to refresh? Usually it is watching in the front-end for
-  an event or when accounts change.
+  - Can we have a trigger to refresh? Usually it is watching in the front-end
+    for an event or when accounts change.
 - Query result from URQL is not typed :(
 - Resolver type errors
 - Move common additional resolvers like \_ethereum, connect, etc to external

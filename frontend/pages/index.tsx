@@ -5,6 +5,7 @@ import { gql, useMutation, useQuery } from 'urql';
 import {
   AccountDocument,
   ConnectDocument,
+  MintDocument,
   TransfersDocument,
 } from '../.graphclient';
 
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
   });
 
   const [connectResult, connect] = useMutation(ConnectDocument);
+  const [mintResult, mint] = useMutation(MintDocument);
 
   const result = useQuery({ query: AccountDocument });
   const account = result[0]?.data?._ethereum?.account;
@@ -23,11 +25,19 @@ const Home: NextPage = () => {
     await connect();
   };
 
+  const doMint = async () => {
+    console.log('doMint');
+    await mint();
+  };
+
   return (
     <Container fluid>
       <Row justify="center" align="center">
         {account ? (
-          <Badge>{account}</Badge>
+          <>
+            <Badge>{account}</Badge>
+            <Button onClick={doMint}>Mint</Button>
+          </>
         ) : (
           <Button onPress={doConnect}>Connect</Button>
         )}

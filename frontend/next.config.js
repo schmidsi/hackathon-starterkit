@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+const withTM = require('next-transpile-modules')(['@private/contracts']);
 
-module.exports = nextConfig
+const nextConfig = withTM({ reactStrictMode: true, swcMinify: true });
+
+module.exports = nextConfig;

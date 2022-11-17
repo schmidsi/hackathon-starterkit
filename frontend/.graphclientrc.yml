@@ -19,6 +19,7 @@ additionalTypeDefs: |
 
   type Mutation {
     connect: Boolean!
+    mint: String
   }
 
   extend type Query {
