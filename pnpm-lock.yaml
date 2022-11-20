@@ -13,7 +13,7 @@ importers:
       hardhat: ^2.11.2
       subgraph: workspace:*
     dependencies:
-      '@graphprotocol/hardhat-graph': 0.1.0-alpha.0_anxsstnrv66azrpxvaxbogjwdq
+      '@graphprotocol/hardhat-graph': link:../../../@graphprotocol/hardhat-graph
       '@nomicfoundation/hardhat-toolbox': 2.0.0_wkvsmvqgwu6c535vtq4jzntgea
       '@openzeppelin/contracts': 4.7.3
       hardhat: 2.11.2_mwhvu7sfp6vq5ryuwb6hlbjfka
@@ -1962,18 +1962,6 @@ packages:
     resolution: {integrity: sha512-r1SPDIZVQiGMxcY8rhFSM0y7d/xAbQf5vHMWUf59js1KgoyWpM6P3tczZqmQd7JTmeyNsDGIPzd9FeaxllsU4w==}
     dependencies:
       assemblyscript: 0.19.10
-
-  /@graphprotocol/hardhat-graph/0.1.0-alpha.0_anxsstnrv66azrpxvaxbogjwdq:
-    resolution: {integrity: sha512-m+IwMbFbt3pqCYxR/uHWJXzhfP/Iq3rjStcJaFxJ2Xgk2VDnoiLRon7KQORcDScqyEj8Qu9ooKGFLrkikInwNQ==}
-    peerDependencies:
-      '@graphprotocol/graph-cli': '>= 0.31.0'
-      '@graphprotocol/graph-ts': '>= 0.27.0'
-      hardhat: '>=2.9.0'
-    dependencies:
-      '@graphprotocol/graph-cli': 0.33.1
-      '@graphprotocol/graph-ts': 0.27.0
-      hardhat: 2.11.2_mwhvu7sfp6vq5ryuwb6hlbjfka
-    dev: false
 
   /@graphql-codegen/core/2.6.2_graphql@16.6.0:
     resolution: {integrity: sha512-58T5yf9nEfAhDwN1Vz1hImqpdJ/gGpCGUaroQ5tqskZPf7eZYYVkEXbtqRZZLx1MCCKwjWX4hMtTPpHhwKCkng==}
