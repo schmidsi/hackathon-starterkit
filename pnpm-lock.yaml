@@ -7,13 +7,13 @@ importers:
 
   contracts:
     specifiers:
-      '@graphprotocol/hardhat-graph': 0.1.0-alpha.0
+      '@graphprotocol/hardhat-graph': 0.1.0-alpha.2
       '@nomicfoundation/hardhat-toolbox': ^2.0.0
       '@openzeppelin/contracts': ^4.7.3
       hardhat: ^2.11.2
       subgraph: workspace:*
     dependencies:
-      '@graphprotocol/hardhat-graph': link:../../../@graphprotocol/hardhat-graph
+      '@graphprotocol/hardhat-graph': 0.1.0-alpha.2_o57iu24f37amd2plgbqjbcv4bq
       '@nomicfoundation/hardhat-toolbox': 2.0.0_wkvsmvqgwu6c535vtq4jzntgea
       '@openzeppelin/contracts': 4.7.3
       hardhat: 2.11.2_mwhvu7sfp6vq5ryuwb6hlbjfka
@@ -1765,6 +1765,15 @@ packages:
       '@ethersproject/strings': 5.7.0
     dev: false
 
+  /@float-capital/float-subgraph-uncrashable/0.0.0-alpha.5:
+    resolution: {integrity: sha512-VowQhSZ80fAsUE4kv3MF7M3OOaKEW0d3dS2XQO/4geUyqRx0tLVl12saVYJfdo3HKoDDD2kpv+A8fKPj6+lF2w==}
+    hasBin: true
+    dependencies:
+      graphql: 16.6.0
+      graphql-import-node: 0.0.5_graphql@16.6.0
+      js-yaml: 4.1.0
+    dev: false
+
   /@formatjs/ecma402-abstract/1.13.0:
     resolution: {integrity: sha512-CQ8Ykd51jYD1n05dtoX6ns6B9n/+6ZAxnWUAonvHC4kkuAemROYBhHkEB4tm1uVrRlE7gLDqXkAnY51Y0pRCWQ==}
     dependencies:
@@ -1958,10 +1967,64 @@ packages:
       - utf-8-validate
     dev: false
 
+  /@graphprotocol/graph-cli/0.36.1:
+    resolution: {integrity: sha512-JTiIyPBxLKBOliC7Mdci8A+ApzOmfuGRHNQukgZVWn2+ktld/d/hPLghEKIgE+Fy4z8hCWa865oPUHV6r/J4+Q==}
+    hasBin: true
+    dependencies:
+      '@float-capital/float-subgraph-uncrashable': 0.0.0-alpha.5
+      assemblyscript: 0.19.10
+      binary-install-raw: 0.0.13_debug@4.3.1
+      chalk: 3.0.0
+      chokidar: 3.5.1
+      debug: 4.3.1
+      docker-compose: 0.23.4
+      dockerode: 2.5.8
+      fs-extra: 9.0.0
+      glob: 7.1.6
+      gluegun: github.com/edgeandnode/gluegun/b34b9003d7bf556836da41b57ef36eb21570620a_debug@4.3.1
+      graphql: 15.5.0
+      immutable: 3.8.2
+      ipfs-http-client: 34.0.0
+      jayson: 3.6.6
+      js-yaml: 3.13.1
+      node-fetch: 2.6.0
+      pkginfo: 0.4.1
+      prettier: 1.19.1
+      request: 2.88.2
+      semver: 7.3.5
+      sync-request: 6.1.0
+      tmp-promise: 3.0.2
+      web3-eth-abi: 1.7.0
+      which: 2.0.2
+      yaml: 1.9.2
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+    dev: false
+
   /@graphprotocol/graph-ts/0.27.0:
     resolution: {integrity: sha512-r1SPDIZVQiGMxcY8rhFSM0y7d/xAbQf5vHMWUf59js1KgoyWpM6P3tczZqmQd7JTmeyNsDGIPzd9FeaxllsU4w==}
     dependencies:
       assemblyscript: 0.19.10
+
+  /@graphprotocol/graph-ts/0.29.0:
+    resolution: {integrity: sha512-9rCouklL2CjlqtywcwSw++MzjBWlmm6274j4s5HokjOTxr64ER7SCKx+2iCqVV0/S7ivc63MzIHlCLSCjPjbiA==}
+    dependencies:
+      assemblyscript: 0.19.10
+    dev: false
+
+  /@graphprotocol/hardhat-graph/0.1.0-alpha.2_o57iu24f37amd2plgbqjbcv4bq:
+    resolution: {integrity: sha512-AOP241McISHe2a/F7Ef5Irw+nMITvKX1SDdGRI7DwSil19Xw9kQeBZpstKH1IvOB4Cv//li0F765emOWyMQjNQ==}
+    peerDependencies:
+      '@graphprotocol/graph-cli': '>= 0.36.1'
+      '@graphprotocol/graph-ts': '>= 0.29.0'
+      hardhat: '>=2.9.0'
+    dependencies:
+      '@graphprotocol/graph-cli': 0.36.1
+      '@graphprotocol/graph-ts': 0.29.0
+      hardhat: 2.11.2_mwhvu7sfp6vq5ryuwb6hlbjfka
+    dev: false
 
   /@graphql-codegen/core/2.6.2_graphql@16.6.0:
     resolution: {integrity: sha512-58T5yf9nEfAhDwN1Vz1hImqpdJ/gGpCGUaroQ5tqskZPf7eZYYVkEXbtqRZZLx1MCCKwjWX4hMtTPpHhwKCkng==}
@@ -5613,7 +5676,7 @@ packages:
   /axios/0.21.4:
     resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
     dependencies:
-      follow-redirects: 1.15.1
+      follow-redirects: 1.15.1_debug@4.3.4
     transitivePeerDependencies:
       - debug
     dev: false
@@ -8015,16 +8078,6 @@ packages:
     resolution: {integrity: sha512-1gIBiWJNR0tKUNv8gZuk7l9rVX06OuLzY9AoGio7y/JT4V1IZErEMEq2TJS+PFcw/y0RshZ1J/27VfK1UQzYVg==}
     engines: {node: '>=0.4.0'}
 
-  /follow-redirects/1.15.1:
-    resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
-    engines: {node: '>=4.0'}
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    dev: false
-
   /follow-redirects/1.15.1_debug@4.3.1:
     resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==}
     engines: {node: '>=4.0'}
@@ -8433,7 +8486,6 @@ packages:
       graphql: '*'
     dependencies:
       graphql: 16.6.0
-    dev: true
 
   /graphql-tag/2.12.6_graphql@16.6.0:
     resolution: {integrity: sha512-FdSNcu2QQcWnM2VNvSCCDCVS5PpPqpzgFT8+GXzqJuoDd0CBncxCY278u4mhRO7tMgo2JjgJA5aZ+nWSQ/Z+xg==}
