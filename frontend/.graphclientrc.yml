@@ -12,23 +12,8 @@ documents:
   - './queries/**/*.graphql'
   - './mutations/**/*.graphql'
 
-additionalTypeDefs: |
-  extend schema {
-    mutation: Mutation
-  }
-
-  type Mutation {
-    connect: Boolean!
-    mint: String
-  }
-
-  extend type Query {
-    _ethereum: Ethereum
-  }
-
-  type Ethereum {
-    account: String
-  }
+additionalTypeDefs:
+  - ./additionalTypeDefs.graphql
 
 additionalResolvers:
   - './resolvers/index.ts'
