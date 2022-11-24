@@ -3,6 +3,9 @@ sources:
     handler:
       graphql:
         endpoint: http://localhost:8000/subgraphs/name/mynft
+    transforms: # The following section will make sure to automatically fetch the block information, and then use it for tracking in future queries.
+      - blockTracking:
+          validateSchema: true # Validates that the schema source actually contains _meta and input block filters.
 
 plugins:
   - pollingLive:
