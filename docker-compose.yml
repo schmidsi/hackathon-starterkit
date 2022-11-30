@@ -24,6 +24,8 @@ services:
       ipfs: 'ipfs:5001'
       ethereum: 'localhost:http://hardhat:8545'
       GRAPH_LOG: info
+      ## Uncomment next line if you want to use debug forking: https://thegraph.com/docs/en/cookbook/subgraph-debug-forking/
+      # fork_base: https://api.thegraph.com/subgraphs/id/
   ipfs:
     image: ipfs/go-ipfs:v0.10.0
     ports:
