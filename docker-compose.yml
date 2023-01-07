@@ -5,7 +5,7 @@ services:
     ports:
       - "8545:8545"
   graph-node:
-    image: graphprotocol/graph-node:v0.27.0
+    image: graphprotocol/graph-node:v0.29.0
     ports:
       - '8000:8000'
       - '8001:8001'
@@ -27,7 +27,7 @@ services:
       ## Uncomment next line if you want to use debug forking: https://thegraph.com/docs/en/cookbook/subgraph-debug-forking/
       # fork_base: https://api.thegraph.com/subgraphs/id/
   ipfs:
-    image: ipfs/go-ipfs:v0.10.0
+    image: ipfs/kubo:latest
     ports:
       - '5001:5001'
   postgres:
