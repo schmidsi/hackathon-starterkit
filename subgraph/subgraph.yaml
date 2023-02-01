@@ -4,10 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: MyNFT
-    network: localhost
+    network: mainnet
     source:
-      abi: MyNFT
-      address: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+      abi: ERC721
+      address: '0x5180db8f5c931aae63c74266b211f580155ecac8'
+      startBlock: 13547115
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -17,8 +18,8 @@ dataSources:
         - ApprovalForAll
         - Transfer
       abis:
-        - name: MyNFT
-          file: ./abis/MyNFT.json
+        - name: ERC721
+          file: ./abis/ERC721.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,indexed uint256)
           handler: handleApproval
