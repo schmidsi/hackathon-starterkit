@@ -1,21 +1,23 @@
 {
-  "name": "contracts",
+  "name": "@private/contracts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "localnode": "hardhat node --hostname 0.0.0.0",
+    "mint": "hardhat mint --network localhost",
     "deploy:localhost": "pnpm hardhat deploy --network localhost"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@graphprotocol/hardhat-graph": "0.1.0-alpha.2",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "@openzeppelin/contracts": "^4.7.3",
-    "hardhat": "^2.11.2"
-  },
-  "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^2.0.2"
+    "hardhat": "^2.11.2",
+    "node-fetch": "^3.3.1",
+    "subgraph": "workspace:*"
   }
 }
