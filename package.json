@@ -5,6 +5,7 @@
     "quickstart": "pnpm contracts:deploy && pnpm subgraph:create && pnpm subgraph:deploy && cd contracts && pnpm mint",
     "contracts:deploy": "cd contracts && pnpm deploy:localhost",
     "subgraph:create": "cd subgraph && pnpm create:local",
-    "subgraph:deploy": "cd subgraph && pnpm build && pnpm deploy:local"
+    "subgraph:deploy": "cd subgraph && pnpm build && pnpm deploy:local",
+    "frontend:dev": "cd frontend && pnpm dev"
   }
 }

@@ -25,6 +25,11 @@ started with fullstack dapp development with Hardhat and The Graph.
 - Navigate to
   [http://localhost:8000/subgraphs/name/mynft/graphql](http://localhost:8000/subgraphs/name/mynft/graphql)
   to explore the newly deployed subgraph
+- Terminal 2: Run the frontend: `pnpm frontend:dev`
+- Navigate to [http://localhost:3000/](http://localhost:3000/)
+- Connect your MetaMask to the local hardhat node
+- Import the private key of some accounts in MetaMask
+- Mint some NFTs
 
 ### Other commands
 
