@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
     "hardhat": "^2.11.2"
   },
   "devDependencies": {
