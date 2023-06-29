@@ -4,13 +4,18 @@ import { gql, useMutation, useQuery } from 'urql';
 
 import {
   AccountDocument,
+  AccountQuery,
+  AccountQueryVariables,
   ConnectDocument,
   MintDocument,
   TransfersDocument,
 } from '../.graphclient';
 
 const Home: NextPage = () => {
-  const [{ data, fetching, error }] = useQuery({
+  const [{ data, fetching, error }] = useQuery<
+    AccountQuery,
+    AccountQueryVariables
+  >({
     query: TransfersDocument,
   });
 
